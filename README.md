@@ -1,11 +1,5 @@
 # The Archiver 归档者
 
-A surreal 5–8 minute desk-work ritual, built with React + TypeScript +
-Vite — no game engine, no paid assets, no backend.
-
-一个 5–8 分钟的超现实办公室仪式。用 React + TypeScript + Vite 构建——没有
-游戏引擎，没有付费素材，没有后端。
-
 **▶ Play now / 在线试玩：https://ywsherry03.github.io/the-archiver/**
 **Source / 源代码：https://github.com/ywsherry03/the-archiver**
 
@@ -27,7 +21,7 @@ it decides which of three endings you reach. There's no resist button.
 三个结局中的哪一个。游戏里没有「反抗」按钮。（键盘操作：`Tab` + `Enter`
 /`Space` 可以代替所有拖拽。）
 
-## 留白 · a blank space
+## 
 
 **EN** — Everything that arrives on this desk was alive, once. The job
 never asks you to notice that.
