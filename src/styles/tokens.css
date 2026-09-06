@@ -1,0 +1,73 @@
+:root {
+  /* Names kept stable across the codebase; values reassigned for a cold,
+     clinical, single dark world — a monitored facility, not a paper desk. */
+  --paper-bone: #0b0d11; /* void: the constant, near-black ground */
+  --ink-black: #e4e9ef; /* ink: primary cool-white foreground */
+  --file-beige: #14181e; /* surface: panels, drawers, item cards */
+  --accent-red: #e14b4b; /* alert: stamps, rejects, critical readouts */
+  --life-blue: #33d6f2; /* life: the seed / living signal, electric cyan */
+  --anomaly-yellow: #dbff5c; /* anomaly: unclassifiable-object accent */
+
+  --surface-raised: #1c222b; /* cabinet, hovered/raised surfaces */
+  --cold-grey-1: #3a4149; /* structural lines on the character, lit */
+  --cold-grey-2: #21262d; /* structural lines, recessed */
+  --copier-black: #050608; /* near-absolute black, glitch banner ground */
+  --fluor-white: #eaf6fb; /* rare hot highlight */
+
+  --font-mono: "IBM Plex Mono", "Noto Sans SC", ui-monospace, "Courier New", monospace;
+
+  --radius-organic: 22px;
+  --static-opacity: 0.05;
+  --world-saturation: 1;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-snap: cubic-bezier(0.2, 0.9, 0.2, 1);
+
+  --t-fast: 150ms;
+  --t-med: 320ms;
+  --t-slow: 600ms;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper-bone);
+  color: var(--ink-black);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent-red);
+  color: var(--paper-bone);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid var(--life-blue);
+  outline-offset: 2px;
+}
